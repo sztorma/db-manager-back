@@ -3,11 +3,10 @@ package hu.tormaszabolcs.dbmanager.entity;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
-import javax.persistence.Table;
+
 
 
 @Entity
-@Table(name = "KISKUTYA"/*, schema = "CRUDMANAGER"*/)
 public class Visitor {
 
     @Id
