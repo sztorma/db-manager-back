@@ -7,5 +7,6 @@
     http://www.liquibase.org/xml/ns/dbchangelog-ext http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-ext.xsd">
 
     <include file="/db/changelog/changes/create-table.xml"/>
+    <include file="/db/changelog/changes/insert-visitor.xml"/>
 </databaseChangeLog>
 
