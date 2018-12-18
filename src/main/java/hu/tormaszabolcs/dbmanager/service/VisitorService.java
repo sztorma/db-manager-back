@@ -22,4 +22,22 @@ public class VisitorService {
         return bridgeList;
     }
 
+    public void deleteVisitorById(long id) {
+        visitorRepository.deleteById(id);
+    }
+
+    public void updateVisitor(long id, Visitor visitor) {
+        Visitor visitorToUpdate = visitorRepository.findById(id).get();
+        visitorToUpdate.setName(visitor.getName());
+        visitorRepository.save(visitorToUpdate);
+    }
+
+    public Long createVisitor(Visitor visitorFromFront) {
+        Visitor visitorToCreate = new Visitor();
+        Visitor createdVisitor = new Visitor();
+        visitorToCreate.setName(visitorFromFront.getName());
+        createdVisitor = visitorRepository.save(visitorToCreate);
+        return createdVisitor.getId();
+    }
+
 }
