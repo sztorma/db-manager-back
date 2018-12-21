@@ -7,15 +7,17 @@
     http://www.liquibase.org/xml/ns/dbchangelog-ext http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-ext.xsd">
 
 <!--    <changeSet author="sztorma" id="2">
-        <insert tableName="visitor">
+        <insert tableName="comment">
             <column name="id" valueNumeric="1"/>
-            <column name="name" value="Luca"/>
+            <column name="commenttext" value="hello Lucuka"/>
         </insert>
     </changeSet>
     <changeSet author="sztorma" id="3">
         <insert tableName="visitor">
-            <column name="id" valueNumeric="2"/>
-            <column name="name" value="törölni"/>
+            <column name="id" valueNumeric="1"/>
+            <column name="name" value="Luca"/>
+            <column name="birthdate" value="2014-05-29"/>
+            <column name="comment_id" valueNumeric="1"/>
         </insert>
     </changeSet>-->
 </databaseChangeLog>
