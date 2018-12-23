@@ -16,9 +16,11 @@ public class Visitor {
 
     @Id
     @GeneratedValue(strategy=GenerationType.IDENTITY)
+    @Column(name = "visitor_id")
     private Long id;
+    @Column(name = "visitor_name")
     private String name;
-    @Column(name = "birthdate")
+    @Column(name = "visitor_birthdate")
     private Date birthDate;
     @ManyToOne
     @JoinColumn(name = "comment_id", nullable = false)

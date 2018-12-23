@@ -8,15 +8,15 @@
 
 <!--    <changeSet author="sztorma" id="2">
         <insert tableName="comment">
-            <column name="id" valueNumeric="1"/>
-            <column name="commenttext" value="hello Lucuka"/>
+            <column name="comment_id" valueNumeric="1"/>
+            <column name="comment_text" value="hello Lucuka"/>
         </insert>
     </changeSet>
     <changeSet author="sztorma" id="3">
         <insert tableName="visitor">
-            <column name="id" valueNumeric="1"/>
-            <column name="name" value="Luca"/>
-            <column name="birthdate" value="2014-05-29"/>
+            <column name="visitor_id" valueNumeric="1"/>
+            <column name="visitor_name" value="Luca"/>
+            <column name="visitor_birthdate" value="2014-05-29"/>
             <column name="comment_id" valueNumeric="1"/>
         </insert>
     </changeSet>-->

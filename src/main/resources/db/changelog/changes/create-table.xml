@@ -8,13 +8,13 @@
 
     <changeSet author="sztorma" id="1">
         <createTable tableName="visitor">
-            <column autoIncrement="true" name="id" type="INT">
+            <column autoIncrement="true" name="visitor_id" type="INT">
                 <constraints primaryKey="true"/>
             </column>
-            <column name="name" type="VARCHAR(255)">
+            <column name="visitor_name" type="VARCHAR(255)">
                 <constraints nullable="false"/>
             </column>
-            <column name="birthdate" type="DATE">
+            <column name="visitor_birthdate" type="DATE">
                 <constraints nullable="false"/>
             </column>
             <column name="comment_id" type="INT">
@@ -23,10 +23,10 @@
         </createTable>
         
         <createTable tableName="comment">
-            <column autoIncrement="true" name="id" type="INT">
+            <column autoIncrement="true" name="comment_id" type="INT">
                 <constraints primaryKey="true"/>
             </column>
-            <column name="commenttext" type="VARCHAR(255)">
+            <column name="comment_text" type="VARCHAR(255)">
                 <constraints nullable="false"/>
             </column>
         </createTable>    
