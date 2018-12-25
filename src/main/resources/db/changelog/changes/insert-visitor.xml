@@ -9,7 +9,8 @@
 <!--    <changeSet author="sztorma" id="2">
         <insert tableName="comment">
             <column name="comment_id" valueNumeric="1"/>
-            <column name="comment_text" value="hello Lucuka"/>
+            <column name="commented_visitorname" value="Luca"/>
+            <column name="comment_text" value="Hello Lucu!"/>
         </insert>
     </changeSet>
     <changeSet author="sztorma" id="3">

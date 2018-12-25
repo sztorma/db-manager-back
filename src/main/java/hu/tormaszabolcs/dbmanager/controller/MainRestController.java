@@ -1,6 +1,8 @@
 package hu.tormaszabolcs.dbmanager.controller;
 
+import hu.tormaszabolcs.dbmanager.entity.Comment;
 import hu.tormaszabolcs.dbmanager.entity.Visitor;
+import hu.tormaszabolcs.dbmanager.service.CommentService;
 import hu.tormaszabolcs.dbmanager.service.VisitorService;
 import java.util.Collection;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -19,6 +21,8 @@ public class MainRestController {
 
     @Autowired
     VisitorService visitorService;
+    @Autowired
+    CommentService commentService;
 
     @RequestMapping(method = RequestMethod.GET)
     @ResponseStatus(value = HttpStatus.OK)
@@ -38,11 +42,12 @@ public class MainRestController {
     public void updateVisitor(@PathVariable long id, @RequestBody Visitor visitor) {
         visitorService.updateVisitor(id, visitor);
     }
-    
+
     @RequestMapping(method = RequestMethod.POST, produces = {"application/json"}, consumes = {"application/json"})
     @ResponseStatus(value = HttpStatus.CREATED)
     public String createVisitor(@RequestBody Visitor visitor) {
-        return visitorService.createVisitor(visitor).toString();
+        long commentIdForName=commentService.nameFinder(visitor.getName());
+        return visitorService.createVisitor(visitor, commentService.findById(commentIdForName)).toString();
     }
 
 }

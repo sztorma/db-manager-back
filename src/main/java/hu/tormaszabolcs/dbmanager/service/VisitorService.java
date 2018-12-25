@@ -1,6 +1,7 @@
 package hu.tormaszabolcs.dbmanager.service;
 
 import hu.tormaszabolcs.dbmanager.dao.VisitorRepository;
+import hu.tormaszabolcs.dbmanager.entity.Comment;
 import hu.tormaszabolcs.dbmanager.entity.Visitor;
 import java.util.ArrayList;
 import java.util.Collection;
@@ -32,12 +33,16 @@ public class VisitorService {
         visitorRepository.save(visitorToUpdate);
     }
 
-    public Long createVisitor(Visitor visitorFromFront) {
+    public Long createVisitor(Visitor visitorFromFront, Comment comment) {
         Visitor visitorToCreate = new Visitor();
         Visitor createdVisitor = new Visitor();
         visitorToCreate.setName(visitorFromFront.getName());
+        visitorToCreate.setBirthDate(visitorFromFront.getBirthDate());
+        visitorToCreate.setComment(comment);
         createdVisitor = visitorRepository.save(visitorToCreate);
         return createdVisitor.getId();
     }
+    
+    
 
 }

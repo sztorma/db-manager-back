@@ -8,10 +8,13 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
+import javax.persistence.Table;
+import org.hibernate.annotations.Formula;
 
 
 
 @Entity
+@Table(name = "visitor")
 public class Visitor {
 
     @Id
@@ -25,6 +28,8 @@ public class Visitor {
     @ManyToOne
     @JoinColumn(name = "comment_id", nullable = false)
     private Comment comment;
+    @Formula("age(visitor_birthdate)")
+    private String age;
     
     public Visitor(){}
 
@@ -65,6 +70,14 @@ public class Visitor {
 
     public void setComment(Comment comment) {
         this.comment = comment;
+    }
+
+    public String getAge() {
+        return age;
+    }
+
+    public void setAge(String age) {
+        this.age = age;
     }
     
 }

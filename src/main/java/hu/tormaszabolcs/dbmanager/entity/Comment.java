@@ -9,21 +9,25 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.OneToMany;
+import javax.persistence.Table;
 
 @Entity
+@Table(name = "comment")
 public class Comment {
     
     @Id
     @GeneratedValue(strategy=GenerationType.IDENTITY)
     @Column(name = "comment_id")
     private Long id;
+    @Column(name = "commented_visitorname")
+    private String commentedName;
     @Column(name = "comment_text")
     private String commentText;
     @JsonBackReference
     @OneToMany(mappedBy = "comment")
     private List<Visitor> visitors;
     
-    private Comment(){}
+    public Comment(){}
 
     public Comment(String commentText) {
         this.commentText = commentText;
@@ -53,4 +57,11 @@ public class Comment {
         this.visitors = visitors;
     }
 
+    public String getCommentedName() {
+        return commentedName;
+    }
+
+    public void setCommentedName(String commentedName) {
+        this.commentedName = commentedName;
+    }
 }

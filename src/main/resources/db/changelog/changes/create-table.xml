@@ -26,6 +26,11 @@
             <column autoIncrement="true" name="comment_id" type="INT">
                 <constraints primaryKey="true"/>
             </column>
+            
+            <column name="commented_visitorname" type="VARCHAR(255)">
+                <constraints nullable="false"/>
+            </column>
+            
             <column name="comment_text" type="VARCHAR(255)">
                 <constraints nullable="false"/>
             </column>
