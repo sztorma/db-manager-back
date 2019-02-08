@@ -19,8 +19,9 @@ public class CorsConfig {
         CorsConfiguration configAuthentication = new CorsConfiguration();
         configAuthentication.setAllowCredentials(true);
         //Changed from this.allowOrigin to "*" (Every domain will be allowed !!!)
-        configAuthentication.addAllowedOrigin(devUrl);
-        configAuthentication.addAllowedOrigin(prodUrl);
+        configAuthentication.addAllowedOrigin("*");
+        //configAuthentication.addAllowedOrigin(devUrl);
+        //configAuthentication.addAllowedOrigin(prodUrl);
         configAuthentication.addAllowedHeader("Authorization");
         configAuthentication.addAllowedHeader("Content-Type");
         configAuthentication.addAllowedHeader("Accept");
