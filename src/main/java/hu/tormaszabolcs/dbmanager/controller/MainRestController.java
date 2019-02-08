@@ -43,7 +43,8 @@ public class MainRestController {
     @RequestMapping(method = RequestMethod.PUT, value = "/{id}", produces = {"application/json"}, consumes = {"application/json"})
     @ResponseStatus(value = HttpStatus.OK)
     public void updateVisitor(@PathVariable long id, @RequestBody Visitor visitor) {
-        visitorService.updateVisitor(id, visitor);
+        long commentIdForName = commentService.nameFinder(visitor.getName());
+        visitorService.updateVisitor(id, visitor, commentService.findById(commentIdForName));
     }
 
     @RequestMapping(method = RequestMethod.POST, produces = {"application/json"}, consumes = {"application/json"})

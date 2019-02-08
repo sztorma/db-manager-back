@@ -27,9 +27,11 @@ public class VisitorService {
         visitorRepository.deleteById(id);
     }
 
-    public void updateVisitor(long id, Visitor visitor) {
+    public void updateVisitor(long id, Visitor visitor, Comment comment) {
         Visitor visitorToUpdate = visitorRepository.findById(id).get();
         visitorToUpdate.setName(visitor.getName());
+        visitorToUpdate.setBirthDate(visitor.getBirthDate());
+        visitorToUpdate.setComment(comment);
         visitorRepository.save(visitorToUpdate);
     }
 

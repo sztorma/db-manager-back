@@ -32,7 +32,7 @@ public class CommentService {
         while (i < tempCommentList.size() && !nameToSearch.toLowerCase().equals(tempCommentList.get(i).getCommentedName().toLowerCase())) {
             i++;
         }
-        return (i < tempCommentList.size() ? (i + 1) : 3);
+        return (i < tempCommentList.size() ? (i + 1) : 1);
     }
 
 }

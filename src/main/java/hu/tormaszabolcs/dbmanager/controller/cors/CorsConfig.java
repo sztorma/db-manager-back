@@ -11,15 +11,16 @@ import org.springframework.web.filter.CorsFilter;
 
 @Configuration
 public class CorsConfig {
-    private final String allowOrigin
-            = "http://localhost:8080";
+    private final String devUrl = "http://localhost:8080";
+    private final String prodUrl= "https://front-sztorma.herokuapp.com";
     @Bean
     public FilterRegistrationBean corsFilter() {
         UrlBasedCorsConfigurationSource source = new UrlBasedCorsConfigurationSource();
         CorsConfiguration configAuthentication = new CorsConfiguration();
         configAuthentication.setAllowCredentials(true);
         //Changed from this.allowOrigin to "*" (Every domain will be allowed !!!)
-        configAuthentication.addAllowedOrigin("*");
+        configAuthentication.addAllowedOrigin(devUrl);
+        configAuthentication.addAllowedOrigin(prodUrl);
         configAuthentication.addAllowedHeader("Authorization");
         configAuthentication.addAllowedHeader("Content-Type");
         configAuthentication.addAllowedHeader("Accept");
