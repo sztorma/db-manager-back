@@ -1,0 +1,446 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xmlns:ext="http://www.liquibase.org/xml/ns/dbchangelog-ext"
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.1.xsd
+    http://www.liquibase.org/xml/ns/dbchangelog-ext http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-ext.xsd">
+
+<changeSet author="sztorma2" id="3">
+    <insert tableName="comment">
+        <column name="comment_id" valueNumeric="1"/>
+        <column name="commented_visitorname" value="NC"/>
+        <column name="comment_text" value="No assigned famous person"/>
+    </insert>
+    <insert tableName="comment">
+        <column name="comment_id" valueNumeric="2"/>
+        <column name="commented_visitorname" value="István"/>
+        <column name="comment_text" value="Stephen Hawking"/>
+    </insert>
+    <insert tableName="comment">
+        <column name="comment_id" valueNumeric="3"/>
+        <column name="commented_visitorname" value="Isti"/>
+        <column name="comment_text" value="Stephen Hawking"/>
+    </insert>
+    <insert tableName="comment">
+        <column name="comment_id" valueNumeric="4"/>
+        <column name="commented_visitorname" value="Pista"/>
+        <column name="comment_text" value="Stephen Hawking"/>
+    </insert>
+    <insert tableName="comment">
+        <column name="comment_id" valueNumeric="5"/>
+        <column name="commented_visitorname" value="Pisti"/>
+        <column name="comment_text" value="Stephen Hawking"/>
+    </insert>
+    <insert tableName="comment">
+        <column name="comment_id" valueNumeric="6"/>
+        <column name="commented_visitorname" value="Pityu"/>
+        <column name="comment_text" value="Stephen Hawking"/>
+    </insert>
+    <insert tableName="comment">
+        <column name="comment_id" valueNumeric="7"/>
+        <column name="commented_visitorname" value="Laci"/>
+        <column name="comment_text" value="Leslie Nielsen"/>
+    </insert>
+    <insert tableName="comment">
+        <column name="comment_id" valueNumeric="8"/>
+        <column name="commented_visitorname" value="Lálszló"/>
+        <column name="comment_text" value="Leslie Nielsen"/>
+    </insert>
+    <insert tableName="comment">
+        <column name="comment_id" valueNumeric="9"/>
+        <column name="commented_visitorname" value="József"/>
+        <column name="comment_text" value="Guiseppe Verdi"/>
+    </insert>
+    <insert tableName="comment">
+        <column name="comment_id" valueNumeric="10"/>
+        <column name="commented_visitorname" value="Józsi"/>
+        <column name="comment_text" value="Guiseppe Verdi"/>
+    </insert>
+    <insert tableName="comment">
+        <column name="comment_id" valueNumeric="11"/>
+        <column name="commented_visitorname" value="János"/>
+        <column name="comment_text" value="John Lennon"/>
+    </insert>
+    <insert tableName="comment">
+        <column name="comment_id" valueNumeric="12"/>
+        <column name="commented_visitorname" value="Jani"/>
+        <column name="comment_text" value="John Lennon"/>
+    </insert>
+    <insert tableName="comment">
+        <column name="comment_id" valueNumeric="13"/>
+        <column name="commented_visitorname" value="Zoltán"/>
+        <column name="comment_text" value="Dr. Magyar Zoltán"/>
+    </insert>
+    <insert tableName="comment">
+        <column name="comment_id" valueNumeric="14"/>
+        <column name="commented_visitorname" value="Zoli"/>
+        <column name="comment_text" value="Dr. Magyar Zoltán"/>
+    </insert>
+    <insert tableName="comment">
+        <column name="comment_id" valueNumeric="15"/>
+        <column name="commented_visitorname" value="Sándor"/>
+        <column name="comment_text" value="Weöres Sándor"/>
+    </insert>
+    <insert tableName="comment">
+        <column name="comment_id" valueNumeric="16"/>
+        <column name="commented_visitorname" value="Sanyi"/>
+        <column name="comment_text" value="Weöres Sándor"/>
+    </insert>
+    <insert tableName="comment">
+        <column name="comment_id" valueNumeric="17"/>
+        <column name="commented_visitorname" value="Gábor"/>
+        <column name="comment_text" value="Reviczky Gábor"/>
+    </insert>
+    <insert tableName="comment">
+        <column name="comment_id" valueNumeric="18"/>
+        <column name="commented_visitorname" value="Ferenc"/>
+        <column name="comment_text" value="Frank Sinatra"/>
+    </insert>
+    <insert tableName="comment">
+        <column name="comment_id" valueNumeric="19"/>
+        <column name="commented_visitorname" value="Feri"/>
+        <column name="comment_text" value="Frank Sinatra"/>
+    </insert>
+    <insert tableName="comment">
+        <column name="comment_id" valueNumeric="20"/>
+        <column name="commented_visitorname" value="Attila"/>
+        <column name="comment_text" value="Czene Attila"/>
+    </insert>
+    <insert tableName="comment">
+        <column name="comment_id" valueNumeric="21"/>
+        <column name="commented_visitorname" value="Péter"/>
+        <column name="comment_text" value="Peter Falk"/>
+    </insert>
+    <insert tableName="comment">
+        <column name="comment_id" valueNumeric="22"/>
+        <column name="commented_visitorname" value="Peti"/>
+        <column name="comment_text" value="Peter Falk"/>
+    </insert>
+    <insert tableName="comment">
+        <column name="comment_id" valueNumeric="23"/>
+        <column name="commented_visitorname" value="Tamás"/>
+        <column name="comment_text" value="Somló Tamás"/>
+    </insert>
+    <insert tableName="comment">
+        <column name="comment_id" valueNumeric="24"/>
+        <column name="commented_visitorname" value="Tomi"/>
+        <column name="comment_text" value="Somló Tamás"/>
+    </insert>
+    <insert tableName="comment">
+        <column name="comment_id" valueNumeric="25"/>
+        <column name="commented_visitorname" value="Zsolt"/>
+        <column name="comment_text" value="Baumgartner Zsolt"/>
+    </insert>
+    <insert tableName="comment">
+        <column name="comment_id" valueNumeric="26"/>
+        <column name="commented_visitorname" value="Zsolti"/>
+        <column name="comment_text" value="Baumgartner Zsolt"/>
+    </insert>
+    <insert tableName="comment">
+        <column name="comment_id" valueNumeric="27"/>
+        <column name="commented_visitorname" value="Tibor"/>
+        <column name="comment_text" value="Benedek Tibor"/>
+    </insert>
+    <insert tableName="comment">
+        <column name="comment_id" valueNumeric="28"/>
+        <column name="commented_visitorname" value="Tibi"/>
+        <column name="comment_text" value="Benedek Tibor"/>
+    </insert>
+    <insert tableName="comment">
+        <column name="comment_id" valueNumeric="29"/>
+        <column name="commented_visitorname" value="András"/>
+        <column name="comment_text" value="Andre Agassi"/>
+    </insert>
+    <insert tableName="comment">
+        <column name="comment_id" valueNumeric="30"/>
+        <column name="commented_visitorname" value="Csaba"/>
+        <column name="comment_text" value="Abaházi Csaba"/>
+    </insert>
+    <insert tableName="comment">
+        <column name="comment_id" valueNumeric="31"/>
+        <column name="commented_visitorname" value="Csabi"/>
+        <column name="comment_text" value="Abaházi Csaba"/>
+    </insert>
+    <insert tableName="comment">
+        <column name="comment_id" valueNumeric="32"/>
+        <column name="commented_visitorname" value="Imre"/>
+        <column name="comment_text" value="Antal Imre"/>
+    </insert>
+    <insert tableName="comment">
+        <column name="comment_id" valueNumeric="33"/>
+        <column name="commented_visitorname" value="Imi"/>
+        <column name="comment_text" value="Antal Imre"/>
+    </insert>
+    <insert tableName="comment">
+        <column name="comment_id" valueNumeric="34"/>
+        <column name="commented_visitorname" value="Lajos"/>
+        <column name="comment_text" value="Louis Armstrong"/>
+    </insert>
+    <insert tableName="comment">
+        <column name="comment_id" valueNumeric="35"/>
+        <column name="commented_visitorname" value="György"/>
+        <column name="comment_text" value="George Michael"/>
+    </insert>
+    <insert tableName="comment">
+        <column name="comment_id" valueNumeric="36"/>
+        <column name="commented_visitorname" value="Gyuri"/>
+        <column name="comment_text" value="George Michael"/>
+    </insert>
+    <insert tableName="comment">
+        <column name="comment_id" valueNumeric="37"/>
+        <column name="commented_visitorname" value="Balázs"/>
+        <column name="comment_text" value="Blaise Pascal"/>
+    </insert>
+    <insert tableName="comment">
+        <column name="comment_id" valueNumeric="38"/>
+        <column name="commented_visitorname" value="Gyula"/>
+        <column name="comment_text" value="Bodrogi Gyula"/>
+    </insert>
+    <insert tableName="comment">
+        <column name="comment_id" valueNumeric="39"/>
+        <column name="commented_visitorname" value="Gyuszi"/>
+        <column name="comment_text" value="Bodrogi Gyula"/>
+    </insert>
+    <insert tableName="comment">
+        <column name="comment_id" valueNumeric="40"/>
+        <column name="commented_visitorname" value="Mihály"/>
+        <column name="comment_text" value="Michael Jackson"/>
+    </insert>
+    <insert tableName="comment">
+        <column name="comment_id" valueNumeric="41"/>
+        <column name="commented_visitorname" value="Misi"/>
+        <column name="comment_text" value="Michael Jackson"/>
+    </insert>
+    <insert tableName="comment">
+        <column name="comment_id" valueNumeric="42"/>
+        <column name="commented_visitorname" value="Mária"/>
+        <column name="comment_text" value="Marie Curie"/>
+    </insert>
+    <insert tableName="comment">
+        <column name="comment_id" valueNumeric="43"/>
+        <column name="commented_visitorname" value="Marcsi"/>
+        <column name="comment_text" value="Marie Curie"/>
+    </insert>
+    <insert tableName="comment">
+        <column name="comment_id" valueNumeric="44"/>
+        <column name="commented_visitorname" value="Erzsébet"/>
+        <column name="comment_text" value="Lisa Minelli"/>
+    </insert>
+    <insert tableName="comment">
+        <column name="comment_id" valueNumeric="45"/>
+        <column name="commented_visitorname" value="Erzsi"/>
+        <column name="comment_text" value="Lisa Minelli"/>
+    </insert>
+    <insert tableName="comment">
+        <column name="comment_id" valueNumeric="46"/>
+        <column name="commented_visitorname" value="Katalin"/>
+        <column name="comment_text" value="Kovács Kati"/>
+    </insert>
+    <insert tableName="comment">
+        <column name="comment_id" valueNumeric="47"/>
+        <column name="commented_visitorname" value="Kati"/>
+        <column name="comment_text" value="Kovács Kati"/>
+    </insert>
+    <insert tableName="comment">
+        <column name="comment_id" valueNumeric="48"/>
+        <column name="commented_visitorname" value="Ilona"/>
+        <column name="comment_text" value="Medveczky Ilona"/>
+    </insert>
+    <insert tableName="comment">
+        <column name="comment_id" valueNumeric="49"/>
+        <column name="commented_visitorname" value="Ica"/>
+        <column name="comment_text" value="Medveczky Ilona"/>
+    </insert>
+    <insert tableName="comment">
+        <column name="comment_id" valueNumeric="50"/>
+        <column name="commented_visitorname" value="Éva"/>
+        <column name="comment_text" value="Risztov Éva"/>
+    </insert>
+    <insert tableName="comment">
+        <column name="comment_id" valueNumeric="51"/>
+        <column name="commented_visitorname" value="Évi"/>
+        <column name="comment_text" value="Risztov Éva"/>
+    </insert>
+    <insert tableName="comment">
+        <column name="comment_id" valueNumeric="52"/>
+        <column name="commented_visitorname" value="Anna"/>
+        <column name="comment_text" value="Anne Hathaway"/>
+    </insert>
+    <insert tableName="comment">
+        <column name="comment_id" valueNumeric="53"/>
+        <column name="commented_visitorname" value="Zsuzsanna"/>
+        <column name="comment_text" value="Koncz Zsuzsa"/>
+    </insert>
+    <insert tableName="comment">
+        <column name="comment_id" valueNumeric="54"/>
+        <column name="commented_visitorname" value="Zsuzsa"/>
+        <column name="comment_text" value="Koncz Zsuzsa"/>
+    </insert>
+    <insert tableName="comment">
+        <column name="comment_id" valueNumeric="55"/>
+        <column name="commented_visitorname" value="Zsuzsi"/>
+        <column name="comment_text" value="Koncz Zsuzsa"/>
+    </insert>
+    <insert tableName="comment">
+        <column name="comment_id" valueNumeric="56"/>
+        <column name="commented_visitorname" value="Judit"/>
+        <column name="comment_text" value="Halász Judit"/>
+    </insert>
+    <insert tableName="comment">
+        <column name="comment_id" valueNumeric="57"/>
+        <column name="commented_visitorname" value="Juci"/>
+        <column name="comment_text" value="Halász Judit"/>
+    </insert>
+    <insert tableName="comment">
+        <column name="comment_id" valueNumeric="58"/>
+        <column name="commented_visitorname" value="Jutka"/>
+        <column name="comment_text" value="Halász Judit"/>
+    </insert>
+    <insert tableName="comment">
+        <column name="comment_id" valueNumeric="59"/>
+        <column name="commented_visitorname" value="Ágnes"/>
+        <column name="comment_text" value="Keleti Ágnes"/>
+    </insert>
+    <insert tableName="comment">
+        <column name="comment_id" valueNumeric="60"/>
+        <column name="commented_visitorname" value="Ági"/>
+        <column name="comment_text" value="Keleti Ágnes"/>
+    </insert>
+    <insert tableName="comment">
+        <column name="comment_id" valueNumeric="61"/>
+        <column name="commented_visitorname" value="Júlia"/>
+        <column name="comment_text" value="Kudlik Júlia"/>
+    </insert>
+    <insert tableName="comment">
+        <column name="comment_id" valueNumeric="62"/>
+        <column name="commented_visitorname" value="Juli"/>
+        <column name="comment_text" value="Kudlik Júlia"/>
+    </insert>
+    <insert tableName="comment">
+        <column name="comment_id" valueNumeric="63"/>
+        <column name="commented_visitorname" value="Andrea"/>
+        <column name="comment_text" value="Szulák Andrea"/>
+    </insert>
+    <insert tableName="comment">
+        <column name="comment_id" valueNumeric="64"/>
+        <column name="commented_visitorname" value="Andi"/>
+        <column name="comment_text" value="Szulák Andrea"/>
+    </insert>
+    <insert tableName="comment">
+        <column name="comment_id" valueNumeric="65"/>
+        <column name="commented_visitorname" value="Ildikó"/>
+        <column name="comment_text" value="Pécsi Ildikó"/>
+    </insert>
+    <insert tableName="comment">
+        <column name="comment_id" valueNumeric="66"/>
+        <column name="commented_visitorname" value="Ildi"/>
+        <column name="comment_text" value="Pécsi Ildikó"/>
+    </insert>
+    <insert tableName="comment">
+        <column name="comment_id" valueNumeric="67"/>
+        <column name="commented_visitorname" value="Erika"/>
+        <column name="comment_text" value="Miklósa Erika"/>
+    </insert>
+    <insert tableName="comment">
+        <column name="comment_id" valueNumeric="68"/>
+        <column name="commented_visitorname" value="Eri"/>
+        <column name="comment_text" value="Miklósa Erika"/>
+    </insert>
+    <insert tableName="comment">
+        <column name="comment_id" valueNumeric="69"/>
+        <column name="commented_visitorname" value="Krisztina"/>
+        <column name="comment_text" value="Egerszegi Krisztina"/>
+    </insert>
+    <insert tableName="comment">
+        <column name="comment_id" valueNumeric="70"/>
+        <column name="commented_visitorname" value="Kriszti"/>
+        <column name="comment_text" value="Egerszegi Krisztina"/>
+    </insert>
+    <insert tableName="comment">
+        <column name="comment_id" valueNumeric="71"/>
+        <column name="commented_visitorname" value="Kriszta"/>
+        <column name="comment_text" value="Egerszegi Krisztina"/>
+    </insert>
+    <insert tableName="comment">
+        <column name="comment_id" valueNumeric="72"/>
+        <column name="commented_visitorname" value="Irén"/>
+        <column name="comment_text" value="Psota Irén"/>
+    </insert>
+    <insert tableName="comment">
+        <column name="comment_id" valueNumeric="73"/>
+        <column name="commented_visitorname" value="Eszter"/>
+        <column name="comment_text" value="Bartók Eszter"/>
+    </insert>
+    <insert tableName="comment">
+        <column name="comment_id" valueNumeric="74"/>
+        <column name="commented_visitorname" value="Eszti"/>
+        <column name="comment_text" value="Bartók Eszter"/>
+    </insert>
+    <insert tableName="comment">
+        <column name="comment_id" valueNumeric="75"/>
+        <column name="commented_visitorname" value="Magdolna"/>
+        <column name="comment_text" value="Rúzsa Magdolna"/>
+    </insert>
+    <insert tableName="comment">
+        <column name="comment_id" valueNumeric="76"/>
+        <column name="commented_visitorname" value="Magdi"/>
+        <column name="comment_text" value="Rúzsa Magdolna"/>
+    </insert>
+    <insert tableName="comment">
+        <column name="comment_id" valueNumeric="77"/>
+        <column name="commented_visitorname" value="Mónika"/>
+        <column name="comment_text" value="Ullmann Mónika"/>
+    </insert>
+    <insert tableName="comment">
+        <column name="comment_id" valueNumeric="78"/>
+        <column name="commented_visitorname" value="Móni"/>
+        <column name="comment_text" value="Ullmann Mónika"/>
+    </insert>
+    <insert tableName="comment">
+        <column name="comment_id" valueNumeric="79"/>
+        <column name="commented_visitorname" value="Edit"/>
+        <column name="comment_text" value="Domján Edit"/>
+    </insert>
+    <insert tableName="comment">
+        <column name="comment_id" valueNumeric="80"/>
+        <column name="commented_visitorname" value="Szilvia"/>
+        <column name="comment_text" value="Péter Szabó Szilvia"/>
+    </insert>
+    <insert tableName="comment">
+        <column name="comment_id" valueNumeric="81"/>
+        <column name="commented_visitorname" value="Szilvi"/>
+        <column name="comment_text" value="Péter Szabó Szilvia"/>
+    </insert>
+    <insert tableName="comment">
+        <column name="comment_id" valueNumeric="82"/>
+        <column name="commented_visitorname" value="Anita"/>
+        <column name="comment_text" value="Ábel Anita"/>
+    </insert>
+    <insert tableName="comment">
+        <column name="comment_id" valueNumeric="83"/>
+        <column name="commented_visitorname" value="Anikó"/>
+        <column name="comment_text" value="Für Anikó"/>
+    </insert>
+    <insert tableName="comment">
+        <column name="comment_id" valueNumeric="84"/>
+        <column name="commented_visitorname" value="Dániel"/>
+        <column name="comment_text" value="Gyurta Dániel"/>
+    </insert>
+    <insert tableName="comment">
+        <column name="comment_id" valueNumeric="85"/>
+        <column name="commented_visitorname" value="Dani"/>
+        <column name="comment_text" value="Gyurta Dániel"/>
+    </insert>
+    <insert tableName="comment">
+        <column name="comment_id" valueNumeric="86"/>
+        <column name="commented_visitorname" value="Zsófia"/>
+        <column name="comment_text" value="Sophie Marceau"/>
+    </insert>
+    <insert tableName="comment">
+        <column name="comment_id" valueNumeric="87"/>
+        <column name="commented_visitorname" value="Zsófi"/>
+        <column name="comment_text" value="Sophie Marceau"/>
+    </insert>
+</changeSet>
+</databaseChangeLog>
